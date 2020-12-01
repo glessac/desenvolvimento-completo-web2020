@@ -1,0 +1,47 @@
+/*box model*/
+.conteudo {
+	border: 1px solid red;
+	padding: 20px;
+	width: 150px;
+	margin: 20px;
+
+}
+/*magin collapse: quando 2 elementos tem margin, elas se sobrepoem e prevalece o maior
+ex: box 1 tem 30 margin, box 2 tem 50, entre elas tera 50 de espaço, nao 80*/
+
+/*Elementos flutuantes - aula 41*/
+.flutuante {
+	background-color: blue;
+	border: 1px solid gray;
+	width: 190px;
+	height: 190px;
+
+}
+
+.flutuante1 {
+	background-color: red;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	float: left; /*sai do fluxo normal e ficara por cima do conteudo*/
+
+}
+
+.flutuante2 {
+	background-color: blue;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	float: left; /*as 3 saem do fluxo normal e vao um p o lado da outra*/
+	margin: 10px;
+}
+
+.clear { /*sem isso conteudo fica em volta do 
+	elemento com float, com ela fica abaixo*/
+	clear: both; /*pode colocar so left ou so right*/ 
+}
+
+#fundo {
+	background-color: green;
+	border: 5px solid red
+}

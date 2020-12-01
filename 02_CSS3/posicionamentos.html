@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos - static, relative, absolute e fixed</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+
+		body {
+			background: #007fc7;
+		}
+		.container {
+			background: #FFF;
+			width: 800px;
+			margin: 10px auto; /*auto pra centralizar*/
+			padding: 10px;
+			position: relative; /*para o absoluto ficar dentro do container e nao do body*/
+		}
+
+		.alterP {
+			width: 300px;
+		}
+
+		#relativo {
+			border: 1px solid grey;
+			position: relative; /*significa que pode movimentar, precisa especificar abaixo*/
+			top:-20px;
+			left: 80px;			
+		}
+
+		#absoluto {
+			border: 1px solid grey;
+			background: #f2f2f2;
+			position: absolute; 
+			/*o elemento que tiver o absoluto irá para cima dos outros*/
+			top: 100px;
+			right: 20px;
+		}
+
+		#fixa {
+			border: 1px solid grey;
+			background: #f2f2f2;
+			position: fixed; 
+			bottom: 0px;
+			right: 0px;
+			margin: 0px; /*p ficar grudado nos cantos, o P vem com margin*/
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>
+			Posição estática - a padrão
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+	</div>
+
+
+	<div class="container">
+		<h1 id="alteracaoh1">
+			Posição relativa
+		</h1>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP" id="relativo">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+	</div>
+
+	<div class="container">
+		<h1 id="alteracaoh1">
+			Posição absoluta
+		</h1>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP" id="absoluto">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+	</div>
+
+	<div class="container">
+		<h1 id="alteracaoh1">
+			Posição Fixa
+		</h1>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP" id="fixa">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+		<p class="alterP">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut molestie nulla vel lectus venenatis auctor. Praesent ex mi, lobortis suscipit nibh at, commodo suscipit dolor. 
+		</p>
+	</div>
+
+</body>
+</html>
