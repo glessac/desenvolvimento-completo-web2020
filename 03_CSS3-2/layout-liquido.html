@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Layout Líquido</title> <!--este não é responsivo-->
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body {
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			background: #f2f2f2;
+		}
+
+		#container {
+			width: 85%; /*antes 720px*/
+			margin: 0 auto;
+			background: #fff;
+			min-width: 700px; /*o minimo de tamano que tera para nao "escapar" o texto das divs*/
+			max-width: 960px; /*limitando a expansao do layout, maximo de largura que vai alcançar*/
+		}
+
+		#marca {
+			height: 100px;
+			background: #9E9E9E;
+			text-align: center;
+			line-height: 100px;
+		}
+
+		#conteudo {
+			width: 75%; /*520px conta para converter para porcentagem: 520 x 100 / 700 (700 era o total da largura contanto com a navegação)/ */
+			float: right;
+		}
+
+		#navegacao {
+			width: 23%; /*1800 * 100 / 700*/
+			float: left;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			background: #d1d1d1; 
+		}
+
+		#conteudo-principal {
+			width: 64%;
+			float: left;
+		}
+
+		#conteudo-secundario {
+			width: 34%; /*para nao completar 100% e nao se sobrepor*/
+			float: right;
+			background: #d1d1d1;
+		}
+
+		#conteudo-secundario h1,
+		#conteudo-secundario h2,
+		#conteudo-secundario h3,
+		#conteudo-secundario p {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		
+
+		#navegacao ul {
+			list-style: none;
+		}
+
+		#navegacao li a {
+			text-decoration: none;
+			color: black;
+		}
+
+		#rodape {
+			clear: both; /*para virar elemento flutuante tambem*/
+			background: #c4c4c4;
+			padding: 5px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div id="container">
+		<div id="marca">Marca</div>
+		<div id="conteudo">
+			<div id="conteudo-principal">
+				<h2>Conteúdo Principal</h2>
+				<p>Morbi mattis elit erat, ut dapibus ante dapibus sed. Morbi luctus, felis nec sagittis ultrices, tortor sapien euismod magna, ac elementum sapien odio eu ipsum.  </p>
+			</div>
+			<div id="conteudo-secundario">
+				<h2>Conteúdo Secundário</h2>
+				<p>Morbi mattis elit erat, ut dapibus ante dapibus sed. Morbi luctus, felis nec sagittis ultrices, tortor sapien euismod magna, ac elementum sapien odio eu ipsum.  </p>
+			</div>
+		</div>
+			
+
+		<div id="navegacao">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Notícias</a></li>
+				<li><a href="#">Produtos</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Clientes</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</div>
+		<div id="rodape">Rodapé</div>
+	</div>
+		
+</body>
+</html>

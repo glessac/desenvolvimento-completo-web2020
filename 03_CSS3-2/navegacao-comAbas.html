@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barra de navegação horizontal</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body {
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 720px;
+			float: left;
+		}
+
+		ul li {
+			float: left;
+			background: url(imagens/aba-direita.png) no-repeat top right;
+		}
+
+		li a {
+			display: block;
+			padding: 0 2em;
+			line-height: 3em;
+			text-decoration: none;
+			background: url(imagens/aba-esquerda.png) no-repeat top left;
+			color: #fff;
+		}
+		/*uma aba na li e outro no a, pq do a vai sobrepor do li e assim ficar o formato correto*/
+
+		li a:hover {
+			color: #894a1f
+		}
+
+		ul #atual {
+			background: url(imagens/aba-direita-atual.png) no-repeat top right;
+		}
+
+		ul #atual a {
+			background: url(imagens/aba-esquerda-atual.png) no-repeat top left;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h2>Home</h2>
+	<ul>
+		<li id="atual">
+			<a href="navegacao-comAbas.html">Home</a>
+		</li>
+		<li>
+			<a href="sobre.html">Sobre</a>
+		</li>
+		<li>
+			<a href="servicos.html">Serviços</a>
+		</li>
+		<li>
+			<a href="noticias.html">Notícias</a>
+		</li>
+		<li>
+			<a href="contato.html">Contato</a>
+		</li>
+	</ul>
+	<!--nao criei as outras paginas para mudar a pagina selecionada, mas é só mudar o id atual para a pagina em que estiver selecionando-->
+
+</body>
+</html>
