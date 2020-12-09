@@ -14,17 +14,22 @@
 			width: 85%; /*antes 720px*/
 			margin: 0 auto;
 			background: #fff;
-			min-width: 700px; /*o minimo de tamano que tera para nao "escapar" o texto das divs*/
+			min-width: 700px; /*o minimo de tamanho que tera para nao "escapar" o texto das divs*/
 			max-width: 960px; /*limitando a expansao do layout, maximo de largura que vai alcançar*/
 		}
 
 		#marca {
-			height: 100px;
-			background: #9E9E9E;
+			height: 200px;
+			background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
 			text-align: center;
-			line-height: 100px;
+			line-height: 200px;
 		}
-
+/**  somente se pudesse cortar parte da imagem, no html a img estaria dentro de uma div com id imagem
+		#imagem {
+			width: 90%;
+			overflow: hidden;
+		}
+**/
 		#conteudo {
 			width: 75%; /*520px conta para converter para porcentagem: 520 x 100 / 700 (700 era o total da largura contanto com a navegação)/ */
 			float: right;
@@ -43,8 +48,14 @@
 			float: left;
 		}
 
+		img.img-noticia {
+			width: 96%;
+			padding: 2%;
+			max-width: 600px; /*colocar o tamanho da imagem para nao diminuir a qualidade após chegar no máximo dela*/
+		}
+
 		#conteudo-secundario {
-			width: 34%; /*para nao completar 100% e nao se sobrepor*/
+			width: 32%; /*para nao completar 100% e nao se sobrepor*/
 			float: right;
 			background: #d1d1d1;
 		}
@@ -55,9 +66,7 @@
 		#conteudo-secundario p {
 			padding-right: 20px;
 			padding-left: 20px;
-		}
-
-		
+		}		
 
 		#navegacao ul {
 			list-style: none;
@@ -81,15 +90,24 @@
 
 	<div id="container">
 		<div id="marca">Marca</div>
+
 		<div id="conteudo">
+
 			<div id="conteudo-principal">
 				<h2>Conteúdo Principal</h2>
+			
+				<img src="imagens/natureza.jpg" class="img-noticia">
+				
 				<p>Morbi mattis elit erat, ut dapibus ante dapibus sed. Morbi luctus, felis nec sagittis ultrices, tortor sapien euismod magna, ac elementum sapien odio eu ipsum.  </p>
-			</div>
+				<h2>Conteúdo Principal</h2>
+				<p>Morbi mattis elit erat, ut dapibus ante dapibus sed. Morbi luctus, felis nec sagittis ultrices, tortor sapien euismod magna, ac elementum sapien odio eu ipsum.  </p>
+			</div>	
+
 			<div id="conteudo-secundario">
 				<h2>Conteúdo Secundário</h2>
 				<p>Morbi mattis elit erat, ut dapibus ante dapibus sed. Morbi luctus, felis nec sagittis ultrices, tortor sapien euismod magna, ac elementum sapien odio eu ipsum.  </p>
 			</div>
+
 		</div>
 			
 
