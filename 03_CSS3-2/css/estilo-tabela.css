@@ -1,0 +1,35 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+	width: 600px;
+	border-collapse: separate; /**se quer a borda ficar tudo junto= collapse**/
+}
+
+th, td {
+	padding: 7px;
+}
+
+th {
+	text-transform: uppercase; /**Deixar tudo maiúsculo**/
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em; /**espaço entre as letras**/
+}
+
+tr.alterna {
+	background-color: #efefef;
+}
+
+/**normalmente numeros sao alinhados a direita**/
+.numero {
+	text-align: right;
+}
+
+/**efeito quando o mouse passar por cima, facilitando a visualização**/
+tr:hover {
+	background-color: #c3e6e5;
+}
