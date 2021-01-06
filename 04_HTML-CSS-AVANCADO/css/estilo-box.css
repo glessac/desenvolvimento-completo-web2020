@@ -1,0 +1,42 @@
+#caixa {
+	width: 200px;
+	height: 200px;
+	background: #b9c941;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: center;
+	float: left;
+}
+
+.arred {
+	border-radius: 150px;
+	float: left;
+}
+
+#caixa2 {
+	width: 200px;
+	height: 200px;
+	background: #b9c941;
+	padding: 10px;
+	-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	text-align: center;
+	float: left;
+}
+
+#caixa3 {
+	width: 200px;
+	height: 200px;
+	background: #b9c941;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;/*perde a propriedade que acrescenta o padding a largura e altura*/
+	margin: 50px;
+	float: left;
+}
+
+#caixa3 h1 {
+	margin: 0;
+}

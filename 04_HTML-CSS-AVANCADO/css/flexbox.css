@@ -1,0 +1,110 @@
+
+/*Flexbos no container*/
+#conteudo1 {
+	background: #dcdcdc;
+	height: 400px;
+	display: flex;
+	flex-direction: row-reverse;
+	/* row | row-reverse | column | column-reverse */
+
+	flex-wrap: nowrap;
+	/*nowrap (diminui o item para caber na largura/altura definidas) | wrap (nao altera o formato do item, austara a area) | wrap-reverse*/
+
+	justify-content: space-around;
+	/*flex-start | flex-end | center | space-between | space-around */
+
+	align-items: center;
+	/*strech(estica para a altura do container) | center (centraliza da altura)| flex-start(ficam no começo do container) | flex-end(final do container) | baseline(alinha baseado no texto) */
+}
+
+.item1 {
+	background: white;
+	border: 1px solid gray;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+}
+
+/*Documentações:
+	Flex directions:
+	https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+
+	Flex wrap:
+	https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
+
+	Justify-content:
+	https://www.w3schools.com/cssref/css3_pr_justify-content.asp
+
+	Align-items:
+	https://www.w3schools.com/cssref/css3_pr_align-items.asp
+	*/	
+
+/*Flexbox nos itens*/
+#conteudo2 {
+	background: #dcdcdc;
+	height: 600px;
+	display: flex;
+	margin-top: 10px;
+}
+
+.item2 {
+	/*width: 100px;*/
+	height: 100px;
+	margin: 10px;
+	background: white;
+	border: 1px solid gray;
+
+	/*Define proporção de espaço ocupado pelo item*/
+	flex-grow: 0;
+	/*Para definir uma redução: */
+	flex-shrink: 1;
+	/*Indica o tamanho inicial do flex item
+	antes da distribuição do espaço restante*/
+	flex-basis: 100px; /*padrão auto*/
+
+}
+
+.item-maior {
+	flex-grow: 1;
+}
+
+.item-maior2 {
+	flex-grow: 2;
+}
+
+.ordem1 {
+	order: 1;
+}
+
+.ordem2 {
+	order: 2;
+}
+
+.ordem3 {
+	order: 3;
+	
+}
+
+.ordem4 {
+	order: 4;
+}
+
+/*
+.ordem {
+	order: -1; todos tem order 0 como padrao, se quiser somente colocar 1 item no inicio, é so colocar negativo.
+}
+*/
+
+.item-menor {
+
+	flex-shrink: 5;
+}
+
+/*
+Compatibilidade:
+https://caniuse.com/?search=flexbox
+Auto prefixo:
+https://autoprefixer.github.io/
+Compatibilidade I.E:
+https://github.com/jonathantneal/flexibility
+*/

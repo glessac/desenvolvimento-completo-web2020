@@ -1,0 +1,44 @@
+.forma {
+	width: 300px;
+	height: 300px;	
+}
+
+#caixa {
+	background: url(../imagens/camera.png);
+}
+
+#caixa h1 {
+	background-color: rgba(255, 255, 255, 0.5); /*transparencia*/ 
+} 
+
+#caixa2 {
+	background: linear-gradient(45deg, #CCC, green); /*pode escolher tbm a direção ex: to right*/
+}
+
+#caixa3 {
+	background: radial-gradient(#CCC, yellow, black); /*pode escolher tbm a direção ex: to right*/
+}
+
+#caixa4 {
+	padding: 8px;
+	margin: 50px;
+	background-color: #009670;
+	box-shadow: 20px -10px 15px 10px black; /*lateral - altura - desfoque - espalhamento*/
+}
+
+#caixa4 h1 {
+	color: white;
+	text-shadow: 3px 2px 1px rgba(0,0,0,0.5); /*lateral - altura - desfoque*/
+}
+
+/*
+DOCUMENTACAO:
+RGBA:
+https://www.w3schools.com/css/css3_colors.asp
+GRADIENTES:
+https://www.w3schools.com/css/css3_gradients.asp
+SOMBRA EM TEXTO:
+https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+SOMBRA EM CAIXA:
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+*/
